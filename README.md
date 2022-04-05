@@ -27,6 +27,46 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
+## Installation
+
+Clone the repo:
+
+```shell
+git clone https://github.com/adesettiawan/website-reservasi.git
+```
+
+Install composer packages:
+
+```shell
+composer update or composer install
+```
+
+Copy and rename .env.example to .env, update the environmental variables and set an app key:
+
+```shell
+php artisan key:generate
+```
+
+After that, run all migrations and seed the database:
+
+```shell
+php artisan migrate
+```
+
+```shell
+php artisan db:seed
+```
+
+Or if your database is fresh and you haven't done any work yet, then it's safe to call the commands in a single line:
+
+```shell
+php artisan migrate:refresh --seed
+```
+
+Note that seeding the database is compulsory as it will create the necessary roles and permissions for the user CRUD provided by the project.
+
+Visit <div style="display: inline">http://yoursite.test/login</div> to sign in using below credentials:
+
 ## Demo
 
 URL Admin: https://yoursite.test/login
