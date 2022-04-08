@@ -95,10 +95,14 @@
             <label class="form-check-label p-0" for="status2">Tersedia</label>
           </div> <br>
           <span class="text-danger" style="display: none">status harus dipilih</span>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary tutup-modal" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          {{-- <div class="mt-3 mb-3">
+            <label for="">Upload Foto</label>
+            <input type="file" class="form-control">
+          </div> --}}
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary tutup-modal" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
         </div>
       </form>
     </div>
