@@ -143,8 +143,20 @@
     <hr>
     <hr style="margin-top: 4px">
     <p class="thanks" style="font-size: 20px; margin-top: 30px"> Jangan Lupa Screenshot atau Simpan Bukti Pemesanan!</p>
-    <p class="thanks" style="font-size: 20px; margin-top: 5px"> Terima Kasih - Silahkan Tunjukan Bukti Pemesanan
+    <p class="thanks" style="font-size: 20px; margin-top: 10px"> Terima Kasih - Silahkan Tunjukan Bukti Pemesanan
         Reservasi Pada Kasir Caffe Dijou!</p>
+    <hr style="margin-top: 14px">
+    <div style="margin-top: 60px">
+        <p class="thanks" style="font-size: 20px;">Kamu Juga Bisa Melakukan Pembayaran Melalui QR Code
+            Standar Pembayaran Nasional.<br> Silahkan Scan QR Code Dibawah Ini.!</p>
+        <hr style="margin-top: 14px">
+
+        <figure>
+            <img style="width: 400px; height: 50%;" src="{{ url('frontend-assets/images/qrish.png') }}" alt="qrish">
+        </figure>
+    </div>
+
+
 </body>
 <script>
     window.print();

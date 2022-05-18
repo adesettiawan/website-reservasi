@@ -16,20 +16,19 @@ class MejaSeeder extends Seeder
     {
         Meja::create([
             'no_meja' => 1,
-            'status' => "Tersedia"
+            'status' => "Tersedia",
         ]);
         Meja::create([
             'no_meja' => 2,
-            'status' => "Tersedia"
+            'status' => "Tersedia",
         ]);
         Meja::create([
             'no_meja' => 3,
-            'status' => "Tersedia"
+            'status' => "Tersedia",
         ]);
         Meja::create([
             'no_meja' => 4,
-            'status' => "Tersedia"
+            'status' => "Tersedia",
         ]);
-        
     }
 }

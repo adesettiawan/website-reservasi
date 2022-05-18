@@ -11,7 +11,7 @@ class MejaController extends Controller
 {
     public function showmeja()
     {
-        return view('admin.meja.index',[
+        return view('admin.meja.index', [
             'datameja' => Meja::all()
         ]);
     }
@@ -19,20 +19,21 @@ class MejaController extends Controller
     {
         $request->validate([
             'no_meja' => 'required',
-            'status' => 'required'
+            'status' => 'required',
         ]);
         Meja::create($request->all());
     }
-    public function editmeja(Request $request,$id){
+    public function editmeja(Request $request, $id)
+    {
         $request->validate([
             'no_meja' => 'required',
-            'status' => 'required'
+            'status' => 'required',
         ]);
         Meja::find($id)->update($request->all());
     }
-    public function hapusmeja($id){
-        $idpemesan = Pesanan::where('meja_id',$id)->delete();
+    public function hapusmeja($id)
+    {
+        $idpemesan = Pesanan::where('meja_id', $id)->delete();
         Meja::destroy($id);
     }
-
 }

@@ -65,12 +65,6 @@
               <p>Data Meja</p>
             </a>
           </li>
-          <li class="{{ Request::is('admin/datamenu')? " active" : "" }}">
-            <a href="/admin/datamenu">
-              <i class="now-ui-icons ui-1_bell-53"></i>
-              <p>Data menu</p>
-            </a>
-          </li>
           <li class="{{ Request::is('admin/datakategori')? " active" : "" }}">
             <a href="/admin/datakategori">
               <i class="now-ui-icons education_atom"></i>
@@ -78,6 +72,13 @@
               <p>Data Kategori</p>
             </a>
           </li>
+          <li class="{{ Request::is('admin/datamenu')? " active" : "" }}">
+            <a href="/admin/datamenu">
+              <i class="now-ui-icons ui-1_bell-53"></i>
+              <p>Data menu</p>
+            </a>
+          </li>
+
         </ul>
       </div>
     </div>

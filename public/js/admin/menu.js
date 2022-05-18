@@ -31,7 +31,7 @@ $("#btn-Tambah-menu").click(function () {
     $("#form_edit_menu").css({
         display: "none",
     });
-    $("#form_tambah_menu").attr("action", `/admin/tambah_menu/`);
+    $("#form_tambah_menu").attr("action", `/admin/tambah_menu`);
     let tr = $(this).parents()[1];
     let td = tr.getElementsByTagName("td");
     $("#title-modal").text("Tambah Menu");

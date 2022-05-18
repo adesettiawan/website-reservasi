@@ -49,9 +49,9 @@
         <input type="number" nama="telp" id="telp" class="form-control" placeholder="No. Telepon.." required>
       </div>
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="text-white form-label">Tanggal Pemesanan</label>
+        <label for="exampleInputEmail1" class="text-white form-label">Tanggal Reservasi</label>
         <input type="datetime-local" nama="tgl_reservasi" id="tgl_reservasi" class="form-control"
-          placeholder="Tanggal Pemesanan.." required>
+          placeholder="Tanggal Reservasi.." required>
       </div>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="text-white form-label">Jumlah Orang</label>
