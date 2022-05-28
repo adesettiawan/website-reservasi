@@ -185,13 +185,19 @@ https://templatemo.com/tm-558-klassy-cafe
                     <div class="item">
                         <div class='card'>
                             <div class="price">
-                                <p>{{ $menu->kategori->nama_kategori }}</p>
+                                @if ($menu->stok > 0)
+                                <p>Tersedia</p>
+                                @else
+                                <p>Kosong</p>
+                                @endif
                             </div>
                             <img src=" {{ Storage::url($menu->foto) }}" alt="">
                             <div class='info'>
                                 <h1 class='title'>{{ $menu->nama_menu }}</h1>
                                 <p class='description'>Rp. &nbsp;{{
                                     number_format( $menu->harga, 0, ',','.'); }}</p>
+                                <p class='description'>Kategori: &nbsp;{{
+                                    $menu->kategori->nama_kategori }}</p>
                             </div>
                         </div>
                     </div>
@@ -315,6 +321,11 @@ https://templatemo.com/tm-558-klassy-cafe
                                                     <img src="{{ Storage::url($menu->foto) }}" height="100" alt="">
                                                     <h4>{{ $menu->nama_menu }}</h4>
                                                     <p>{{ $menu->kategori->nama_kategori }}</p>
+                                                    @if ($menu->stok > 0)
+                                                    <p><span class="badge badge-info">Tersedia</span></p>
+                                                    @else
+                                                    <p><span class="badge badge-danger">Kosong</span></p>
+                                                    @endif
                                                     <div class="price">
                                                         <h6>Rp. &nbsp;{{
                                                             number_format( $menu->harga, 0, ',','.'); }}</h6>
@@ -336,6 +347,11 @@ https://templatemo.com/tm-558-klassy-cafe
                                                     <img src="{{ Storage::url($menu->foto) }}" height="100" alt="">
                                                     <h4>{{ $menu->nama_menu }}</h4>
                                                     <p>{{ $menu->kategori->nama_kategori }}</p>
+                                                    @if ($menu->stok > 0)
+                                                    <p><span class="badge badge-info">Tersedia</span></p>
+                                                    @else
+                                                    <p><span class="badge badge-danger">Kosong</span></p>
+                                                    @endif
                                                     <div class="price">
                                                         <h6>Rp. &nbsp;{{
                                                             number_format( $menu->harga, 0, ',','.'); }}</h6>
@@ -357,6 +373,11 @@ https://templatemo.com/tm-558-klassy-cafe
                                                     <img src="{{ Storage::url($menu->foto) }}" height="100" alt="">
                                                     <h4>{{ $menu->nama_menu }}</h4>
                                                     <p>{{ $menu->kategori->nama_kategori }}</p>
+                                                    @if ($menu->stok > 0)
+                                                    <p><span class="badge badge-info">Tersedia</span></p>
+                                                    @else
+                                                    <p><span class="badge badge-danger">Kosong</span></p>
+                                                    @endif
                                                     <div class="price">
                                                         <h6>Rp. &nbsp;{{
                                                             number_format( $menu->harga, 0, ',','.'); }}</h6>

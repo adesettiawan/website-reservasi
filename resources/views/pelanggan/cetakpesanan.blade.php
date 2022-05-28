@@ -152,7 +152,7 @@
         <hr style="margin-top: 14px">
 
         <figure>
-            <img style="width: 400px; height: 50%;" src="{{ url('frontend-assets/images/qrish.png') }}" alt="qrish">
+            <img style="width: 400px; height: 50%;" src="{{ url('frontend-assets/images/qrcode.jpeg') }}" alt="qrish">
         </figure>
     </div>
 

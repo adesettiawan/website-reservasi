@@ -87,12 +87,19 @@
         <div class="card-body makan" data-id="{{ $menu->id }}">
           <h5 class="card-title" data-foto="{{ $menu->foto }}">{{ $menu->nama_menu }}</h5>
           <p class="card-text">Rp. &nbsp;{{$menu->harga}}</p>
+          @if ($menu->stok > 0)
+          <p class="card-text mt-3"><span class="badge badge-info">Tersedia</span></p>
+          @else
+          <p class="card-text mt-3"><span class="badge badge-danger">Kosong</span></p>
+          @endif
+          @if ($menu->stok > 0)
           <button class="btn" style="margin-top: 20px; background: #fb5849;color: #fff">+ Pesan</button>
           <div class="tambah_pesan">
             <button class="btn kurang" style="background: #fb5849;color: #fff"> - </button>
             <input type="text" value="1" class="qty-pesan" readonly>
             <button class="btn tambah" style="background: #0c4d1d;color: #fff"> + </button>
           </div>
+          @endif
         </div>
       </div>
       @endif

@@ -37,6 +37,9 @@
                   Harga
                 </th>
                 <th>
+                  Stok
+                </th>
+                <th>
                   Kategori
                 </th>
                 <th class="text-center">
@@ -53,6 +56,11 @@
                   </td>
                   <td>{{ $menu->nama_menu }}</td>
                   <td>Rp {{ $menu->harga }}</td>
+                  @if ($menu->stok > 0)
+                  <td><span class="badge badge-info">Tersedia</span></td>
+                  @else
+                  <td><span class="badge badge-danger">Kosong</span></td>
+                  @endif
                   <td>{{ $menu->kategori->nama_kategori }}</td>
                   <td class="d-flex justify-content-center">
                     <button class="btn btn-sm btn-warning edit-menu mr-2" data-toggle="modal"
@@ -96,6 +104,14 @@
             <input type="number" class="form-control" name="harga" id="harga" placeholder="masukkan Harga menu.. ">
           </div>
           <div class="form-group">
+            <label for="stok">Stok</label>
+            <select class="form-control" name="stok" id="stok">
+              <option value="">Pilih Stok..</option>
+              <option value="1">Tersedia</option>
+              <option value="0">Kosong</option>
+            </select>
+          </div>
+          <div class="form-group">
             <label for="kategori">Kategori</label>
             <select class="form-control" name="kategori_id" id="kategori">
               <option value="">Pilih kategori</option>
@@ -126,6 +142,14 @@
           <div class="form-group">
             <label for="harga">Harga</label>
             <input type="number" class="form-control" name="harga" id="harga_up" placeholder="masukkan Harga menu.. ">
+          </div>
+          <div class="form-group">
+            <label for="stok">Stok</label>
+            <select class="form-control" name="stok" id="stok_up">
+              <option value="">Pilih Stok..</option>
+              <option value="1">Tersedia</option>
+              <option value="0">Kosong</option>
+            </select>
           </div>
           <div class="form-group">
             <label for="kategori">Kategori</label>

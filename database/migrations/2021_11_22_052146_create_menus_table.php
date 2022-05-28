@@ -18,8 +18,9 @@ class CreateMenusTable extends Migration
             $table->string('foto')->nullable();
             $table->string('nama_menu');
             $table->integer('harga');
+            $table->integer('stok');
             $table->foreignId('kategori_id');
-            
+
             $table->timestamps();
         });
     }

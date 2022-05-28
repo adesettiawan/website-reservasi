@@ -15,8 +15,16 @@ $(".edit-menu").click(function () {
 
     $("#harga_up").val(Format_integer(td[3].innerText));
 
-    $("#kategori_up option").each(function (index) {
+    $("#stok_up option").each(function (index) {
         if (td[4].innerText == $(this).text()) {
+            $(this).attr("selected", true);
+        } else {
+            $(this).removeAttr("selected");
+        }
+    });
+
+    $("#kategori_up option").each(function (index) {
+        if (td[5].innerText == $(this).text()) {
             $(this).attr("selected", true);
         } else {
             $(this).removeAttr("selected");

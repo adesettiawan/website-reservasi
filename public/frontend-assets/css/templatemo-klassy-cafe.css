@@ -1095,10 +1095,10 @@ menu
 
 #menu .price p {
     position: absolute;
-    width: 120px;
+    width: 155px;
     height: 40px;
     background-color: #fb5849;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 600;
     color: #fff;
     border-radius: 5px;

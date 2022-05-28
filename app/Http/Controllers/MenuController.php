@@ -29,7 +29,8 @@ class MenuController extends Controller
                 'foto' => 'image|file',
                 'nama_menu' => 'required',
                 'kategori_id' => 'required',
-                'harga' => 'required'
+                'harga' => 'required',
+                'stok' => 'required'
             ]);
             if ($request->file('foto')) {
                 $validatemenu['foto'] = $request->file('foto')->store('foto_menu', ['disk' => 'public']);
@@ -59,7 +60,8 @@ class MenuController extends Controller
                 'foto' => 'image|file|max:3072',
                 'nama_menu' => 'required',
                 'kategori_id' => 'required',
-                'harga' => 'required'
+                'harga' => 'required',
+                'stok' => 'required'
             ]);
             if ($request->file('foto')) {
                 if ($dtold->foto != "foto_menu/defaultfoto.png") {
